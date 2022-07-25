@@ -1,0 +1,19 @@
+.butoes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  a {
+    text-decoration: none;
+  }
+  .botao__padrao {
+    margin: 2em 0px 1em 0px;
+    color: $color-branco;
+    background-color: $color-verde-claro;
+    padding: 0.75em 6.31em;
+  }
+
+  .button__skip{
+    color: $color-verde-claro;
+  }
+}

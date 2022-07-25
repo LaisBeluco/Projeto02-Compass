@@ -1,11 +1,13 @@
-.paginas{
-  .titulo__pagina{
-    font-size: 24px;
+.pagina-apresentacao {
+  
+  .titulo__pagina {
+    font-size: 1.5em;
     font-weight: 600;
   }
 
-  .texto__pagina{
-    font-size: 18px;
+  .texto__pagina {
+    margin: 1.62em 0 3em 0;
+    font-size: 1.12em;
     font-weight: 400;
   }
 }

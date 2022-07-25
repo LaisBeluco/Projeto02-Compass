@@ -1,22 +1,49 @@
 @import "../css/variaveis";
 
-
-.navegacao{
+.navegacao {
   display: flex;
   justify-content: center;
-.bar{
-  width: 12px;
-  height: 12px;
-  border: 1px solid $color-preto;
-  border-radius: 50%;
-  margin-left: 6px;
-}
-.bar:hover{
-  background-color: $color-verde-claro;
-  border: none;
-}
+  .bar {
+    width: 12px;
+    height: 12px;
+    border: 1px solid $color-preto;
+    border-radius: 50%;
+    margin-left: 6px;
+  }
+  .bar:hover {
+    background-color: $color-verde-claro;
+    border: none;
+  }
+
+  .pointer-button {
+    width: 12px;
+    height: 12px;
+    border: 1px solid $color-preto;
+    border-radius: 50%;
+    margin-left: 6px;
+  }
+
+  .pointer-button:hover {
+    background-color: $color-verde-claro;
+    border: none;
+  }
 }
 
-input{
+input {
   display: none;
 }
+
+.pagina__midle,
+.pagina__end {
+  display: none;
+}
+
+.pagina__midle:target {
+  display: block;
+}
+
+.pagina__end:target{
+  display: block;
+}
+
+

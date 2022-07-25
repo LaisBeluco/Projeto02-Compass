@@ -4,14 +4,17 @@
 }
 * body {
   font-family: "Poppins";
+  max-width: 100%;
 }
 * img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .container {
   margin: 1em;
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -30,16 +33,60 @@
   background-color: #92E3A9;
   border: none;
 }
+.navegacao .pointer-button {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  margin-left: 6px;
+}
+.navegacao .pointer-button:hover {
+  background-color: #92E3A9;
+  border: none;
+}
 
 input {
   display: none;
 }
 
-.paginas .titulo__pagina {
-  font-size: 24px;
+.pagina__midle,
+.pagina__end {
+  display: none;
+}
+
+.pagina__midle:target {
+  display: block;
+}
+
+.pagina__end:target {
+  display: block;
+}
+
+.pagina-apresentacao .titulo__pagina {
+  font-size: 1.5em;
   font-weight: 600;
 }
-.paginas .texto__pagina {
-  font-size: 18px;
+.pagina-apresentacao .texto__pagina {
+  margin: 1.62em 0 3em 0;
+  font-size: 1.12em;
   font-weight: 400;
+}
+
+.butoes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.butoes a {
+  text-decoration: none;
+}
+.butoes .botao__padrao {
+  margin: 2em 0px 1em 0px;
+  color: #ffffff;
+  background-color: #92E3A9;
+  padding: 0.75em 6.31em;
+}
+.butoes .button__skip {
+  color: #92E3A9;
 }/*# sourceMappingURL=main.css.map */
