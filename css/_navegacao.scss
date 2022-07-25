@@ -38,12 +38,22 @@ input {
   display: none;
 }
 
+
 .pagina__midle:target {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
-.pagina__end:target{
-  display: block;
+.pagina__end:target {
+  display: flex;
+  flex-direction: column;
+
 }
 
+.pagina__end:target~.pagina__start{
+  display: none;
+}
 
+.pagina__midle:target~.pagina__start{
+  display: none;
+}
