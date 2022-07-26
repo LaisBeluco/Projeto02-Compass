@@ -3,34 +3,38 @@
 .navegacao {
   display: flex;
   justify-content: center;
-  .bar {
+  align-items: center;
+  margin: 0 0 47px 0;
+  .pointer-button {
+    display: flex;
     width: 12px;
     height: 12px;
     border: 1px solid $color-preto;
     border-radius: 50%;
     margin-left: 6px;
-  }
-  .bar:hover {
-    background-color: $color-verde-claro;
-    border: none;
   }
 
-  .pointer-button {
-    width: 12px;
-    height: 12px;
-    border: 1px solid $color-preto;
-    border-radius: 50%;
-    margin-left: 6px;
+  .pointer-button__active{
+    background-color: $color-verde-claro;
+    border: none;
   }
 
   .pointer-button:hover {
     background-color: $color-verde-claro;
     border: none;
   }
+
+  .pointer-button:active {
+    background-color: $color-verde-claro;
+    border: none;
+  }
 }
 
-input {
-  display: none;
+.pagina__start{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .pagina__midle,
@@ -38,22 +42,24 @@ input {
   display: none;
 }
 
-
 .pagina__midle:target {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .pagina__end:target {
   display: flex;
   flex-direction: column;
-
+  justify-content: center;
+  align-items: center;
 }
 
-.pagina__end:target~.pagina__start{
+.pagina__end:target ~ .pagina__start {
   display: none;
 }
 
-.pagina__midle:target~.pagina__start{
+.pagina__midle:target ~ .pagina__start {
   display: none;
 }

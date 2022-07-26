@@ -1,4 +1,6 @@
 .pagina-apresentacao {
+  margin: 0.5em;
+  text-align: center;
   .titulo__pagina {
     font-size: 1.5em;
     font-weight: 600;
@@ -8,5 +10,23 @@
     margin: 1.62em 0 3em 0;
     font-size: 1.12em;
     font-weight: 400;
+  }
+
+  .start__imagem {
+    text-align: center;
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 330px) {
+  .pagina-apresentacao {
+    .titulo__pagina {
+      font-size: 1.4em;
+    }
+
+    .texto__pagina {
+      font-size: 1em;
+    }
   }
 }

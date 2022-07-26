@@ -7,13 +7,22 @@
     text-decoration: none;
   }
   .botao__padrao {
-    margin: 2em 0px 1em 0px;
+    margin: 0 0px 1em 0px;
     color: $color-branco;
     background-color: $color-verde-claro;
     padding: 0.75em 6.31em;
+    box-shadow: $color-box-shadow;
   }
 
   .button__skip{
+    margin-top: 23px;
     color: $color-verde-claro;
+  }
+
+  .button__get-start{
+    margin: 0 0px 1em 0px;
+    color: $color-branco;
+    background-color: $color-verde-claro;
+    padding: 0.75em 5.9em;
   }
 }
