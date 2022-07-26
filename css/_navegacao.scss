@@ -2,16 +2,17 @@
 
 .navegacao {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   margin: 0 0 47px 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 70px;
   .pointer-button {
     display: flex;
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     border: 1px solid $color-preto;
     border-radius: 50%;
-    margin-left: 6px;
   }
 
   .pointer-button__active{
